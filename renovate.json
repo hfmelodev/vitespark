@@ -4,6 +4,7 @@
   ],
   "automerge": true,
   "automergeType": "pr",
+  "stabilityDays": 3,
   "labels": [
     "dependencies"
   ],
