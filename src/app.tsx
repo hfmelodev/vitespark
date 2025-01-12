@@ -1,13 +1,25 @@
-import { Button } from './components/ui/button'
+import { Route, Routes } from 'react-router'
+import { AppLayout } from './_layouts/app'
+import { AuthLayout } from './_layouts/auth'
+import { NotFound } from './not-found'
+import { Auth } from './pages/auth'
+import { Home } from './pages/home'
 
 export function App() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center">
-      <p>
-        Edit <code>src/app.tsx</code> and save
-      </p>
+    <Routes>
+      <Route element={<AppLayout />}>
+        <Route index element={<Home />} />
+        <Route path="mypage" element={<h1>MyPage</h1>} />
+      </Route>
 
-      <Button>Hello World</Button>
-    </div>
+      <Route path="auth" element={<AuthLayout />}>
+        <Route index element={<Auth />} />
+        <Route path="login" element={<h1>Login</h1>} />
+      </Route>
+
+      {/* Rota para páginas não encontradas */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   )
 }
