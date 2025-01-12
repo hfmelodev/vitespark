@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "automerge": true,
+  "automergeType": "pr",
+  "labels": [
+    "dependencies"
+  ],
+  "schedule": [
+    "at any time"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "groupName": "all dependencies",
+      "automerge": false
+    }
+  ]
+}
