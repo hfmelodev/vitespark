@@ -1,22 +1,17 @@
 import { useState } from 'react'
+import { Button } from './components/ui/button'
 
 export function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button type="button" onClick={() => setCount(count => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div className="flex min-h-screen flex-col items-center justify-center">
+      <Button type="button" onClick={() => setCount(count => count + 1)}>
+        count is {count}
+      </Button>
+      <p>
+        Edit <code>src/app.tsx</code> and save
       </p>
-    </>
+    </div>
   )
 }
