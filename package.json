@@ -3,39 +3,40 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "license": "MIT",
   "author": {
     "name": "Hilquias Ferreira Melo",
-    "email": "hilquiasfmelo@gmail.com"
+    "email": "hilquiasfmelo@gmail.com",
+    "url": "https://github.com/hfmelodev"
   },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview",
-    "renovate": "git pull && pnpm install"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "^1.1.1",
+    "@radix-ui/react-slot": "^1.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.471.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "lucide-react": "^0.471.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "react-helmet-async": "^2.0.5",
-    "react-router": "^7.1.1",
+    "react-router": "^7.5.2",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@types/node": "^22.10.5",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^19.0.3",
-    "@vitejs/plugin-react": "^4.3.4",
-    "autoprefixer": "^10.4.20",
-    "globals": "^15.14.0",
-    "postcss": "^8.4.49",
+    "@types/node": "^22.15.2",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "autoprefixer": "^10.4.21",
+    "globals": "^15.15.0",
+    "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
     "typescript": "~5.7.3",
-    "vite": "^6.0.7"
+    "vite": "^6.3.3"
   }
 }
